@@ -2,6 +2,7 @@
   "name": "arco-design-pro",
   "version": "1.0.0",
   "description": "Arco Design Pro",
+  "homepage": "./",
   "scripts": {
     "start": "react-app-rewired start",
     "dev": "react-app-rewired start",
