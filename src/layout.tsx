@@ -3,10 +3,10 @@ import { Switch, Route, Link, Redirect, useHistory } from 'react-router-dom';
 import { Layout, Menu, Breadcrumb } from '@arco-design/web-react';
 import cs from 'classnames';
 import {
-  IconDashboard,
   IconTag,
   IconMenuFold,
   IconMenuUnfold,
+  IconApps,
 } from '@arco-design/web-react/icon';
 import { useSelector } from 'react-redux';
 import qs from 'query-string';
@@ -29,9 +29,9 @@ const Content = Layout.Content;
 
 function getIconFromKey(key) {
   switch (key) {
-    case 'dashboard':
-      return <IconDashboard className={styles.icon} />;
-    case 'example':
+    case 'utils':
+      return <IconApps className={styles.icon} />;
+    case 'blog':
       return <IconTag className={styles.icon} />;
     default:
       return <div className={styles['icon-empty']} />;

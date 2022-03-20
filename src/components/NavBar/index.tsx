@@ -20,14 +20,13 @@ import {
   IconPoweroff,
   IconExperiment,
   IconDashboard,
-  IconInteraction,
   IconTag,
 } from '@arco-design/web-react/icon';
 import { useSelector, useDispatch } from 'react-redux';
 import { GlobalState } from '@/store';
 import { GlobalContext } from '@/context';
 import useLocale from '@/utils/useLocale';
-import Logo from '@/assets/logo.svg';
+import Logo from '@/assets/T-logo.svg';
 import MessageBox from '@/components/MessageBox';
 import IconButton from './IconButton';
 import Settings from '../Settings';
@@ -140,7 +139,7 @@ function Navbar({ show }: { show: boolean }) {
       <div className={styles.left}>
         <div className={styles.logo}>
           <Logo />
-          <div className={styles['logo-name']}>Arco Pro</div>
+          <div className={styles['logo-name']}>Tensor Web</div>
         </div>
       </div>
       <ul className={styles.right}>

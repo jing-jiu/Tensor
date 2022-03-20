@@ -5,23 +5,24 @@ export type Route = AuthParams & {
   name: string;
   key: string;
   breadcrumb?: boolean;
+  componentPath?: string;
   children?: Route[];
 };
 
 export const routes: Route[] = [
   {
-    name: 'menu.dashboard',
-    key: 'dashboard',
+    name: 'menu.utils',
+    key: 'utils',
     children: [
       {
-        name: 'menu.dashboard.workplace',
-        key: 'dashboard/workplace',
+        name: 'menu.utils.todolist',
+        key: 'utils/todolist',
       },
-    ],
-  },
-  {
-    name: 'Example',
-    key: 'example',
+      {
+        name: 'menu.utils.codeonline',
+        key: 'utils/codeonline',
+      }
+    ]
   },
 ];
 
